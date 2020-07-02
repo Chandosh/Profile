@@ -1,1 +1,15 @@
-<p>Hello Chandosh Kumar</p>
+<div class="editor-placement"> 
+    <image-drawing
+        [src]="imageLocation"
+        outputMimeType="'image/jpeg'"
+        outputQuality="0.8"
+        height="300"
+        width="400"
+        forceSizeCanvas="true"
+        enableRemoveImage="true"
+        enableLoadAnotherImage="true"
+        showCancelButton="true"
+        (save)="save($event)"
+        (cancel)="cancel()">
+    </image-drawing>
+</div>
